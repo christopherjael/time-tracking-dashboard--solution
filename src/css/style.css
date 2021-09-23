@@ -1,0 +1,350 @@
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --Dark-blue: hsl(224, 46%, 9%);
+    --Light-blue: hsl(236, 44%, 20%);
+    --Hover_blue: hsl(236, 41%, 34%);
+    --Light_orange: hsl(15, 100%, 70%);
+    --Soft_blue: hsl(195, 74%, 62%);
+    --Light_red: hsl(348, 100%, 68%);
+    --Lime_green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft_orange: hsl(43, 84%, 65%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+@media  screen and (min-width: 768px) {
+    main{
+        background-color: var(--Dark-blue);
+        height: 100vh;
+    }
+    
+    a, a:active, a:hover{
+        text-decoration: none;
+    }
+    
+    
+    
+    .container{
+        width: fit-content;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    
+    .container .report-perfil-container{
+        width: 300px;
+        margin-right: 1.5em;
+    }
+    
+    .container .report-perfil{
+        width: 100%;
+        background-color: var(--Blue);
+        padding: 1.5em;
+        padding-bottom: 5em;
+        border-radius: 1em;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .container .report-perfil img{
+        width: 100px;
+        margin-bottom: 2em;
+        border-radius: 100%;
+        border: solid white 4px;
+    }
+    
+    .container .time-option{
+        background-color: var(--Light-blue);
+        padding: 1.5em;
+        padding-top: 2.8em;
+        padding-left: 1.7em;
+        display: flex;
+        border-radius: 0 0 1em 1em;
+        flex-direction: column;
+        transform: translateY(-1em);
+        z-index: 1;
+    }
+    
+    .container .time-option button{
+        margin: .5em 0;
+        background: transparent;
+        text-align: left;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        letter-spacing: .5px;
+        cursor: pointer;
+    }
+    
+    .container .reports-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em
+    }
+    
+    .reports-container{
+        min-width: 900px;
+    }
+    
+    .report-information{
+        background-color: var(--Light-blue);
+        padding: 1.5em 2em;
+        border-radius: 1em;
+        transform: translateY(-.8em);
+        transition: .3s ease all;
+        cursor: pointer;
+    }
+    
+    .report-information:hover{
+        background-color: var(--Hover_blue)
+    }
+    
+    .report-information .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100;
+        font-size: 1.1em;
+    }
+    
+    .report-information h2{
+        font-weight: 200;
+        font-size: 4em;
+        margin: .4em 0;
+    }
+    
+    .portada{
+        height: 50px;
+        border-radius: 1em 1em 0 0;
+    }
+    
+    .work .portada{
+        background-image: url("../../images/icon-work.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Light_orange);
+    }
+    
+    .play .portada{
+        background-image: url("../../images/icon-play.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Soft_blue);
+    }
+    
+    .study .portada{
+        background-image: url("../../images/icon-study.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Light_red);
+    }
+    
+    .exercise .portada{
+        background-image: url("../../images/icon-exercise.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Lime_green)
+    }
+    
+    .social .portada{
+        background-image: url("../../images/icon-social.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Violet)  
+    }
+    
+    .self-care .portada{
+        background-image: url("../../images/icon-self-care.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+    
+        background-color: var(--Soft_orange)
+    }
+}
+
+
+
+.last-time{
+    color:  hsl(0, 1%, 72%);
+}
+
+.text-muted{
+    color: hsl(0, 1%, 72%);
+}
+
+
+.big-text{
+    font-size: 3em;
+    font-weight: 100;
+}
+
+@media  screen and (max-width: 900px) {
+    main{
+        background-color: var(--Dark-blue)
+    }
+
+    .big-text{
+        font-size: 1.6em;
+        font-weight: 100;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: .5em;
+    }
+    
+    .container .report-perfil-container{
+        margin-right: 1.5em;
+        width: 100%;
+    }
+    
+    .container .report-perfil{
+        
+        background-color: var(--Blue);
+        padding: 1em;
+        border-radius: 1em;
+        position: relative;
+        z-index: 2;
+        display: flex;
+    }
+    
+    .container .report-perfil img{
+        width: 100px;
+        height: 100px;
+        margin-right: 1em;
+        border-radius: 100%;
+        border: solid white 4px;
+    }
+
+    .container .report-perfil > div{
+        margin-top:1.4em;
+    }
+    
+    .container .time-option{
+        background-color: var(--Light-blue);
+        padding: 1.5em;
+        padding-top: 2.8em;
+        padding-left: 1.7em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 0 0 1em 1em;
+        transform: translateY(-1em);
+    }
+    
+    .container .time-option button{
+        margin: .5em 0;
+        background: transparent;
+        text-align: left;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        letter-spacing: .5px;
+        cursor: pointer;
+    }
+    
+    .container .reports-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em
+    }
+
+    .report-information{
+        background-color: var(--Light-blue);
+        padding: 1.5em 2em;
+        border-radius: 1em;
+        transform: translateY(-.8em);
+        transition: .3s ease all;
+        cursor: pointer;
+    }
+
+    
+    .report-information:hover{
+        background-color: var(--Hover_blue)
+    }
+    
+    .report-information .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100;
+        font-size: 1.1em;
+    }
+    
+    .report-information h2{
+        display: inline;
+        font-weight: 100;
+        font-size: 3em;
+        margin: .5em 0;
+    }
+    
+    .report-information p {
+        display: inline;
+        float: right;
+        font-size: .9em;
+    }
+
+    .last-time{
+        margin-top:1.9em;
+    }
+    .portada{
+        height: 50px;
+        border-radius: 1em 1em 0 0;
+    }
+    
+    .work .portada{
+        background-image: url("../../images/icon-work.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Light_orange);
+    }
+    
+    .play .portada{
+        background-image: url("../../images/icon-play.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Soft_blue);
+    }
+    
+    .study .portada{
+        background-image: url("../../images/icon-study.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Light_red);
+    }
+    
+    .exercise .portada{
+        background-image: url("../../images/icon-exercise.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Lime_green)
+    }
+    
+    .social .portada{
+        background-image: url("../../images/icon-social.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--Violet)  
+    }
+    
+    .self-care .portada{
+        background-image: url("../../images/icon-self-care.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+    
+        background-color: var(--Soft_orange)
+    }
+}
