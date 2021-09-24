@@ -22,7 +22,7 @@ function weeklyData(){
         .then(data => {
             hours.forEach((e,i) => {
                 hours[i].innerHTML = data[i].timeframes.weekly.current + 'hrs'
-                lastTime[i].innerHTML = 'Last Daily - ' + data[i].timeframes.weekly.previous + 'hrs'
+                lastTime[i].innerHTML = 'Last Weekly - ' + data[i].timeframes.weekly.previous + 'hrs'
             })
         })
 }
@@ -33,7 +33,7 @@ function mothlyData(){
         .then(data => {
             hours.forEach((e,i) => {
                 hours[i].innerHTML = data[i].timeframes.monthly.current + 'hrs'
-                lastTime[i].innerHTML = 'Last Daily - ' + data[i].timeframes.monthly.previous + 'hrs'
+                lastTime[i].innerHTML = 'Last Monthly - ' + data[i].timeframes.monthly.previous + 'hrs'
             })
         })
 }
